@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Preview.png">
+    <title>SmartGizmo</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="./js/index.js" type="module" defer></script>
+    <script src="products.json" type="module" defer></script>
+</head>
+<style>
+/* styles.css */
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    display: inline-block;
+    max-width: 100%; /* Фото займе максимально доступну ширину */
+    height: auto; /* Збереження пропорцій розміру */
+    margin-top: 145px; /* Опустити фото вниз на 145px (змініть значення, якщо потрібно) */
+}
+
+
+</style>
+<body>
+    <header>
+        <nav id='cssmenu'>
+            <div class="logo"><a href="index.html">SmartGizmo</a></div>
+            <div id="head-mobile"></div>
+            <div class="button"></div>
+            <ul>
+                <li class='active'><a href='index.html'>Головна</a></li>
+                <li><a href='#'>Каталог</a>
+                    <ul>
+                        <li><a href='smartphone.html'>Смартфони, ноутбуки</a></li>
+                        <li><a href='poverbankacum.html'>Повербанки та зарядні станції</a></li>
+                        <li><a href='naushnuku.html'>Навушники та аксесуари</a></li>
+                        <li><a href='televizoru.html'>Телевізори</a></li>
+                    </ul>
+                </li>
+                <li><a href='contackt.html'>Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Оновлений код для банера -->
+    <div class="banner">
+        <img id="bannerImg" src="images/baner1.png" alt="Ваше фото">
+    </div>
+    <!-- Кінець оновленого коду для банера -->
+    
+    <div class="wrapper">
+        <h1 class="title">Краще в категоріях</h1>
+        <div class="cards"></div>
+        <button class="show-cards none">Показати ще</button>
+        
+        <a href="basket.html" class="basket icon-container">
+            <div class="basket__inner">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M.75-.02a.75.75 0 100 1.5l.408-.006 1.606 1.281 1.839 6.881L4.237 12a2 2 0 102.188 2.722l5.705.028a2 2 0 100-1.5l-5.705-.028a2.007 2.007 0 00-.722-.898l.438-2.632 7.933.027 1.91-7.715H4.227L1.683-.026 1.68-.02v-.005L.75-.02z" fill="#000"></path>
+                </svg>
+                <span class="basket__count">0</span>
+            </div>
+        </a>
+        <a class="home icon-container" href="/">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.98 1.984l7 6h-2.003v6H9.96V10.97H5.997v3.016H2.982v-6H.979l7-6z" fill="#000"></path>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        var images = ["images/baner1.png", "images/baner2.jpg", "images/baner3.png"]; // Зображення, які ви хочете використовувати
+        var currentImageIndex = 0;
+
+        // Функція для зміни зображення фото
+        function changeBannerImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length; // Перемикаємо між зображеннями в кільці
+            var bannerImg = document.getElementById("bannerImg");
+            bannerImg.src = images[currentImageIndex];
+        }
+
+        // Часовий інтервал для автоматичної зміни зображення
+        setInterval(changeBannerImage, 3000); // Змінюйте 3000 на те, що вам потрібно (в мілісекундах)
+    </script>
+</body>
+</html>
