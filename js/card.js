@@ -82,3 +82,4 @@ function renderInfoProduct(product) {
         `;
     wrapper.insertAdjacentHTML('beforeend', productItem);
 }
+
