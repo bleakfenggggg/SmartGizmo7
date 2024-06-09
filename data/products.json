@@ -1,0 +1,203 @@
+[
+    {
+        "id": 1,
+        "title": "Acer 3 Сірий",
+        "price": "26999",
+        "discount": "5",
+        "img": "acer-3-gray.webp",
+        "descr": "Ноутбук Acer Aspire 3 A315-58-553J (NX.ADDEU.02R) Pure Silver / Intel Core i5-1135G7 / RAM 16 ГБ / SSD 1 ТБ,"
+    },
+    {
+        "id": 2,
+        "title": "Iphone 14 PRO max gold",
+        "price": "73999",
+        "discount": "20",
+        "img": "iphone-14-pro-max-gold.webp",
+        "descr": "Apple iPhone 14 Pro Max 512GB Gold "
+    },
+    {
+        "id": 3,
+        "title": "Lenovo 3 Сірий",
+        "price": "23999",
+        "discount": "5",
+        "img": "lenovo-3-gray.webp",
+        "descr": "Ноутбук Lenovo IdeaPad 3 15ITL615.6 "
+    },
+    {
+        "id": 4,
+        "title": "Macbook 10 Сірий",
+        "price": "39499",
+        "discount": "50",
+        "img": "macbook-10-gray.webp",
+        "descr": "Ноутбук Apple MacBook Air 10 M1 8256GB 2020 MGN93 Silver"
+    },
+    {
+        "id": 5,
+        "title": "MSI 15 білий",
+        "price": "23999",
+        "discount": "22",
+        "img": "msi-15-white.webp",
+        "descr": "Ноутбук MSI 15 B12MO (B12MO-801XUA) Classic Black"
+    },
+    {
+        "id": 6,
+        "title": "Power Bank Xiaomi Redmi ",
+        "price": "1100",
+        "discount": "5",
+        "img": "poverbank1.jpg",
+        "descr": "Power Bank Xiaomi Redmi 20000mAh 18W (VXN4304GL) Black"
+    },
+    {
+        "id": 7,
+        "title": "Power Bank Baseus Bipow",
+        "price": "1500",
+        "discount": "5",
+        "img": "poverbank2.jpg",
+        "descr": "Power Bank Baseus Bipow 30000mAh 20W (PPBD050401) Black"
+    },
+    {
+        "id": 8,
+        "title": "Power Bank Romoss",
+        "price": "2500",
+        "discount": "5",
+        "img": "poverbank3.jpg",
+        "descr": "Power Bank Romoss 60000mah PEA60 22.5W (PEA60-152-2142)"
+    },
+    {
+        "id": 9,
+        "title": "Power Bank Romoss",
+        "price": "1700",
+        "discount": "5",
+        "img": "powerbank4.jpg",
+        "descr": "Power Bank Romoss 40000mah 18 W PEA40 (PEA40-112-2135)"
+    },
+    {
+        "id": 10,
+        "title": "Power Bank Xiaomi ",
+        "price": "1000",
+        "discount": "5",
+        "img": "powerbank5.jpg",
+        "descr": "Power Bank Xiaomi 10000mAh Mi 3 22.5W (BHR4412GL) Black"
+    },
+    {
+        "id": 11,
+        "title": "Зарядная станция Romoss",
+        "price": "14705",
+        "discount": "49",
+        "img": "stan1.jpg",
+        "descr": "Зарядная станция Romoss RS300 (RS300-2B2-G153H) (600 Вт)"
+    },
+    {
+        "id": 12,
+        "title": "Зарядная станция EcoFlow",
+        "price": "31198",
+        "discount": "49",
+        "img": "stan2.jpg",
+        "descr": "Зарядная станция EcoFlow RIVER Pro (720 Вт·ч)"
+    },
+    {
+        "id": 13,
+        "title": "Зарядная станция Jackery",
+        "price": "45598",
+        "discount": "49",
+        "img": "satn3.jpg",
+        "descr": "Зарядная станция Jackery Explorer 1000 EU (HTE0531000EU)"
+    },
+    {
+        "id": 14,
+        "title": "Зарядная станция EcoFlow",
+        "price": "25999",
+        "discount": "49",
+        "img": "stan4.jpg",
+        "descr": "Зарядная станция EcoFlow RIVER 2 Max"
+    },
+    {
+        "id": 15,
+        "title": "SЗарядная станция GYS Power",
+        "price": "44219",
+        "discount": "49",
+        "img": "stan5.jpg",
+        "descr": "Зарядная станция GYS Power Pack 1300 (максимальная мощность 2000 Вт)"
+    },
+    {
+        "id": 16,
+        "title": "Наушники Redmi Buds 5",
+        "price": "1999",
+        "discount": "5",
+        "img": "nav1.jpg",
+        "descr": "Наушники Redmi Buds 5 (BHR7627GL) Black"
+    },
+    {
+        "id": 17,
+        "title": "Наушники OPPO Enco",
+        "price": "1999",
+        "discount": "5",
+        "img": "nav2.jpg",
+        "descr": "Наушники OPPO Enco Buds 2 (ETE41) Midnight"
+    },
+    {
+        "id": 18,
+        "title": "Наушники Apple AirPods",
+        "price": "10000",
+        "discount": "5",
+        "img": "nav3.jpg",
+        "descr": "Наушники Apple AirPods with Charging Case 2 gen (MV7N2RU/A) White"
+    },
+    {
+        "id": 19,
+        "title": "Наушники Samsung Galaxy",
+        "price": "4000",
+        "discount": "5",
+        "img": "nav4.jpg",
+        "descr": "Наушники Samsung Galaxy Buds FE (SM-R400NZAASEK) Graphite"
+    },
+    {
+        "id": 20,
+        "title": "Наушники JBL Wave",
+        "price": "2000",
+        "discount": "5",
+        "img": "nav5jpg.jpg",
+        "descr": "Наушники JBL Wave Beam TWS (JBLWBEAMBLK) Black"
+    },
+    {
+        "id": 21,
+        "title": "Телевизор Xiaomi TV A2 32",
+        "price": "9299",
+        "discount": "40",
+        "img": "tel1.jpg",
+        "descr": "Телевизор Xiaomi TV A2 32"
+    },
+    {
+        "id": 22,
+        "title": "Телевизор 75 Xiaomi",
+        "price": "64999",
+        "discount": "40",
+        "img": "tel2.jpg",
+        "descr": "Телевизор 75 Xiaomi Mi TV Q1 75 Black"
+    },
+    {
+        "id": 23,
+        "title": "Телевизор Xiaomi TV",
+        "price": "14999",
+        "discount": "5",
+        "img": "tel3.jpg",
+        "descr": "Телевизор Xiaomi TV A Pro 43"
+    },
+    {
+        "id": 24,
+        "title": "Телевизор Xiaomi TV A Pro 50",
+        "price": "18999",
+        "discount": "5",
+        "img": "tel4.jpg",
+        "descr": "Телевизор Xiaomi TV A Pro 50"
+    },
+    {
+        "id": 25,
+        "title": "Телевизор Sharp 43FH2EA",
+        "price": "11999",
+        "discount": "5",
+        "img": "tel5.jpg",
+        "descr": "Телевизор Sharp 43FH2EA (2T-C43FH2EL2AB)"
+    }
+]
+

@@ -1,0 +1,418 @@
+@import url('./reset.css');
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    text-align: left;
+}
+.title {
+    text-align: left;
+    margin-top: 50px; /* Встановлюємо відступ вниз на 20px */
+    color: #333;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px; 
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 30px;
+    row-gap: 40px; 
+    margin: 60px auto;
+}
+
+.card {
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+}
+
+.card:hover {
+	box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
+.card__top {
+	flex: 0 0 220px;
+	position: relative;
+	overflow: hidden;
+}
+
+.card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card__image > img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	transition: 0.2s;
+}
+
+.card__image:hover > img {
+	transform: scale(1.1);
+}
+
+.card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #ff6633;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 10px;
+}
+
+.card__prices {
+    display: flex;
+    margin-bottom: 10px;
+    flex: 0 0 50%;
+}
+
+.card__price::after {
+    content: "₴";
+    margin-left: 4px;
+    position: relative;
+}
+
+.card__price--discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #ff0000;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.card__price--discount::before {
+    content: "Зі знишкою";
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+
+.card__price--common {
+    font-weight: 400;
+    font-size: 17px;
+    color: #606060;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+}
+
+.card__price--common::before {
+    content: "Звичайна";
+    font-weight: 400;
+    font-size: 13px;
+    color: #bfbfbf;
+}
+
+.card__title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+}
+
+.card__title:hover {
+    color: #ff6633;
+}
+
+.card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #70c05b;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer; 
+    transition: 0.2s;
+    margin-top: auto;
+}
+
+.card__add:hover, .card__add.active {
+    border: 1px solid #ff6633;
+    background-color: #ff6633;
+    color: #fff;
+}
+
+.show-cards{
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #606060;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.show-cards:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.home {
+    position: absolute;
+    top: 0px;
+    right: 45px; /* Відстань від правого краю */
+    width: 60px; /* Розмір контейнера значка дому */
+    height: 38px; /* Висота контейнера значка дому */
+}
+
+.home svg {
+    width: 100%; /* Зробити SVG відповідним контейнеру */
+    height: 100%; /* Зробити SVG відповідним контейнеру */
+}
+
+.basket {
+    position: absolute;
+    top: 3px;
+    right: 10px; /* Відстань від значка дому */
+    width: 31px; /* Розмір контейнера корзини */
+    height: 10px; /* Висота контейнера корзини */
+}
+
+.basket__inner {
+    position: relative;
+}
+
+.basket__count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border-radius: 50%;
+    background-color: #d74e44;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    min-width: 25px;
+}
+
+.basket svg {
+    width: 100%; /* Зробити SVG відповідним контейнеру */
+    height: 100%; /* Зробити SVG відповідним контейнеру */
+}
+
+/* Відступ між значками */
+.basket,
+.home {
+    margin: 5px; /* Додати відступ між значками */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(/images/phon.jpg); /* Путь к вашему новому фоновому изображению */
+    background-size: cover; /* Масштабирует изображение, чтобы оно занимало весь фон */
+    background-position: center; /* Центрирует изображение на фоне */
+    color: white; /* Цвет текста для контраста с фоном */
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background: #333;
+}
+
+.logo {
+    position: absolute;
+    top: 5px; /* Змінено значення */
+    left: 10px;
+    z-index: 123;
+    padding: 5px;
+    font: 18px verdana;
+    color: #6DDB07;
+}
+
+.logo a {
+    color: #6DDB07;
+    margin-left: -250px; /* Додайте цей рядок */
+}
+
+nav {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #head-mobile {
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#cssmenu:after,
+#cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#cssmenu #head-mobile {
+    display: none;
+}
+
+#cssmenu {
+    font-family: sans-serif;
+    background: #333;
+}
+
+#cssmenu > ul > li {
+    float: left;
+}
+
+#cssmenu > ul > li > a {
+    padding: 17px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 700;
+}
+
+#cssmenu > ul > li:hover > a,
+#cssmenu ul li.active a {
+    color: #fff;
+}
+
+#cssmenu > ul > li:hover,
+#cssmenu ul li.active:hover,
+#cssmenu ul li.active,
+#cssmenu ul li.has-sub.active:hover {
+    background: #448D00!important;
+    -webkit-transition: background .3s ease;
+    -ms-transition: background .3s ease;
+    transition: background .3s ease;
+}
+
+#cssmenu > ul > li.has-sub > a {
+    padding-right: 30px;
+}
+
+#cssmenu > ul > li.has-sub > a:after {
+    position: absolute;
+    top: 22px;
+    right: 11px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background: #ddd;
+    content: '';
+}
+
+#cssmenu > ul > li.has-sub > a:before {
+    position: absolute;
+    top: 19px;
+    right: 14px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #3b3737;
+    content: '';
+    -webkit-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+#cssmenu > ul > li.has-sub:hover > a:before {
+    top: 23px;
+    height: 0;
+}
+
+#cssmenu ul ul {
+    position: absolute;
+    left: -9999px;
+}
+
+#cssmenu ul ul li {
+    height: 0;
+    -webkit-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+#cssmenu li:hover > ul {
+    left: auto;
+}
+
+#cssmenu li:hover > ul > li {
+    height: 35px;
+}
+
+#cssmenu ul ul ul {
+    margin-left: 100%;
+    top: 0;
+}
+
+#cssmenu ul ul li a {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+    padding: 11px 15px;
+    width: 170px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #5a5252;
+    font-weight: 400;
+}
+
+#cssmenu ul ul li:last-child > a,
+#cssmenu ul ul li.last-item > a {
+    border-bottom: 0;
+}
+
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li a:hover {
+    color: #333;
+
+/* styles.css */
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
